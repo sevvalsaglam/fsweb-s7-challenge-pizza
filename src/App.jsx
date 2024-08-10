@@ -2,9 +2,11 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import workintech from '/workintech.svg'
 import './App.css'
-import Header from './componenets/Header'
-import PizzaAdi from './componenets/PizzaAdi'
-import PizzaOzellikleri from './componenets/PizzaOzellikleri'
+import Header from './components/Header'
+import PizzaAdi from './components/PizzaAdi'
+import PizzaOzellikleri from './components/PizzaOzellikleri'
+import EkMalzemeler from './components/EkMalzemeler'
+import Siparis from './components/Siparis'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -14,6 +16,8 @@ function App() {
     <Header></Header>
     <PizzaAdi></PizzaAdi>
     <PizzaOzellikleri></PizzaOzellikleri>
+    <EkMalzemeler></EkMalzemeler>
+    <Siparis></Siparis>
     </>
   )
 }
