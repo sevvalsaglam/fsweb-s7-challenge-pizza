@@ -8,6 +8,10 @@ import PizzaOzellikleri from './components/PizzaOzellikleri'
 import EkMalzemeler from './components/EkMalzemeler'
 import Siparis from './components/Siparis'
 
+
+const malzemeler = [{
+  
+}]
 function App() {
   const [count, setCount] = useState(0)
 

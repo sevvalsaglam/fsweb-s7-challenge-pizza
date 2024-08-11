@@ -1,6 +1,13 @@
+body section{
+  width: 532px;
+  display: block;
+  margin-left: 380px;
+  margin-right: 380px;
+
+}
 header {
   background-color: #CE2829;
-  width: 540px;
+  width: 100%;
   height: 207px;
   gap: 0%;
   border: 0px 0px 1px 0px;
@@ -11,24 +18,48 @@ header {
 header h1 {
   color: #ffffff;
   font-family: "Londrina Solid";
-  font-size: 65px;
+  font-size: 54px;
+
 }
 header div {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  align-content: flex-start;
 }
 
 header div span {
   color: #FAF7F2;
   font-family: Barlow;
-  font-size: 20px;
+  font-size: 16px;
 }
 header div p {
   color: #FFFFFF;
   font-family: Barlow;
-  font-size: 20px;
+  font-size: 16px;
+  font-weight:bold;
 }
-
-
-
+.pizzaAdi h2{
+  font-family: Barlow;
+  font-size: 22px;
+  font-weight: SemiBold;
+  text-align: left;
+}
+.pizzaAdi p{
+  font-family: Barlow;
+  font-size: 28px;
+  font-weight: bold;
+  text-align: left;
+}
+.pizzaAdi span {
+  font-family: Barlow;
+  font-size: 16px;
+  color: #5F5F5F;
+}
+.pizzaAdi div{
+  display: flex;
+  flex-direction: row;
+}
 
 .quantity-input {
   width: 66.67px;

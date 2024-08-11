@@ -1,6 +1,7 @@
 
 
 function PizzaOzellikleri(props) {
+  //hamur seç ve boyut seç butonlarına fonksiyon ekle!!
   
     return (
         <>

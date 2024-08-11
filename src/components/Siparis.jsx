@@ -1,10 +1,14 @@
-function Siparis(props) {
-    const { searchText, handleSearch } = props;
+import { useState } from "react";
 
+function Siparis(props) {
     
+    function handleClick() {
+        const [sayi,setSayi]=useState(1);
+    }
   
     return (
         <>
+        <section>
      <div>
         <h3>Sipariş Notu</h3>
         <label for="w3review"></label>
@@ -18,16 +22,19 @@ function Siparis(props) {
     </div>
     <div>
         <div>
-            <button class="quantity-minus">
-                <i class="fa fa-minus"></i>
+            <button class="quantity-minus" >
+                <i class="fa fa-minus"
+                onClick={handleClick}></i>
             </button>
             <input class="quantity-input" type="text" value="1" readonly />
-            <button class="quantity-plus">
-                <i class="fa fa-plus"></i>
+            <button class="quantity-plus" >
+                <i class="fa fa-plus"
+                onClick={handleClick}></i>
             </button>
         </div>
-        <button type="button" class="btn btn-primary btn-lg">SİPARİŞ VER</button>
+        <button type="button" class="btn-primary">SİPARİŞ VER</button>
     </div>
+    </section>
     </>
     );
   }
