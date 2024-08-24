@@ -1,6 +1,6 @@
 function Header(props) {
     const {} = props;
-  
+ 
     return (
       <header>
         <h1>Teknolojik Yemekler</h1>

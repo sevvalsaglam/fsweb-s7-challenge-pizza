@@ -1,45 +1,45 @@
 const malzemeler =[{
     value:"Pepperoni",
-    name: "Pepperoni"
+    label: "Pepperoni"
 },{
     value:"Sosis",
-    name: "Sosis"
+    label: "Sosis"
 },{
     value:"Kanada Jambonu",
-    name: "Kanada Jambonu"
+    label: "Kanada Jambonu"
 },{
     value:"Tavuk Izgara",
-    name: "Tavuk Izgara"
+    label: "Tavuk Izgara"
 },{
     value:"Soğan",
-    name: "Soğan"
+    label: "Soğan"
 },{
     value:"Domates",
-    name: "Domates"
+    label: "Domates"
 },{
     value:"Mısır",
-    name: "Mısır"
+    label: "Mısır"
 },{
     value:"Sucuk",
-    name: "Sucuk"
+    label: "Sucuk"
 },{
     value:"Jalepeno",
-    name: "Jalepeno"
+    label: "Jalepeno"
 },{
     value:"Sarımsak",
-    name: "Sarımsak"
+    label: "Sarımsak"
 },{
     value:"Biber",
-    name: "Biber"
+    label: "Biber"
 },{
     value:"Salam",
-    name: "Salam"
+    label: "Salam"
 },{
     value:"Ananas",
-    name: "Ananas"
+    label: "Ananas"
 },{
     value:"Kabak",
-    name: "Kabak"
+    label: "Kabak"
 }]
 
 
@@ -52,20 +52,25 @@ function EkMalzemeler({
   //ekstra malzemeler için objelerden oluşan bir array yapılacak ve map methoduyla malzemeler checkboxa eklenecek.
     return (
     <>
-        <section>
+        <section className="pizzaSecimi">
             <h3>Ek Malzemeler</h3>
             <p>En Fazla 10 malzeme seçebilirsiniz. 5₺</p>
            
-            <label className="ekMalzemeler">
+            
+            {malzemeler.map((malzeme)=>(
+                <label className="ekMalzemeler">
                 <input
                 type="checkbox"
                 onChange={changeFn}
                 checked={isChecked}
                 name={fieldName}
                 value={value}
-                />{''}
-                {label}
+                label={label}
+                />
+                {malzeme.label}
             </label>
+
+            ))}
 
         </section>
     </>

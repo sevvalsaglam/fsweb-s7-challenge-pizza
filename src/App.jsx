@@ -1,27 +1,31 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import workintech from '/workintech.svg'
 import './App.css'
-import Header from './components/Header'
-import PizzaAdi from './components/PizzaAdi'
-import PizzaOzellikleri from './components/PizzaOzellikleri'
-import EkMalzemeler from './components/EkMalzemeler'
-import Siparis from './components/Siparis'
+import { Route, Switch } from 'react-router-dom'
+import Home from './pages/Home'
+import Success from './pages/Success'
+import OrderPizza from './pages/OrderPizza'
+import { Redirect } from 'react-router-dom'
 
 
-const malzemeler = [{
-  
-}]
+
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
-    <Header></Header>
-    <PizzaAdi></PizzaAdi>
-    <PizzaOzellikleri></PizzaOzellikleri>
-    <EkMalzemeler></EkMalzemeler>
-    <Siparis></Siparis>
+    <Switch>
+      <Route exact path="/">
+        <Redirect to="/home"/>
+      </Route>
+      <Route path="/orderPizza">
+        <OrderPizza></OrderPizza>
+      </Route>
+      <Route path="/home">
+        <Home></Home>
+      </Route>
+      <Route path="/success">
+        <Success></Success>
+      </Route>
+    </Switch>
+
     </>
   )
 }
