@@ -9,6 +9,8 @@ import { Redirect } from 'react-router-dom'
 
 
 function App() {
+
+
   return (
     <>
     <Switch>
@@ -16,7 +18,7 @@ function App() {
         <Redirect to="/home"/>
       </Route>
       <Route path="/orderPizza">
-        <OrderPizza></OrderPizza>
+        <OrderPizza ></OrderPizza>
       </Route>
       <Route path="/home">
         <Home></Home>
